@@ -1,0 +1,21 @@
+[[source]]
+
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+verify_ssl = true
+name = "pypi"
+
+
+[packages]
+
+pyzmq = "*"
+pytest = "*"
+numpy = "*"
+scipy = "*"
+pyqtgraph = "*"
+msgpack-python = "*"
+pyaudio = "*"
+"pyqt5" = "*"
+
+
+[dev-packages]
+
