@@ -11,3 +11,4 @@ from .compression import compression_methods
 # import transfer modes so they register their helper classes
 from . import plaindatastream
 from . import sharedmemstream
+from . import ndarraystream
