@@ -12,3 +12,4 @@ from .compression import compression_methods
 from . import plaindatastream
 from . import sharedmemstream
 from . import ndarraystream
+from . import rawbytesstream
