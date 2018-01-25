@@ -21,7 +21,7 @@ class RawBytesDataSender(DataSender):
             for f in self.funcs:
                 index, data = f(index, data)
 
-        copy = self.params.get('copy', False)
+        copy = self.params.get('copy', True)
         self.socket.send_multipart([index.to_bytes(8, byteorder='big'), data], copy=copy)
 
 class RawBytesDataReceiver(DataReceiver):

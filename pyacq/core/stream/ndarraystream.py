@@ -32,10 +32,9 @@ class NdarrayDataSender(DataSender):
             index = index,
         )
         flags = 0
-        copy = self.params.get('copy', False)
+        copy = self.params.get('copy', True)
         self.socket.send_json(md, flags|zmq.SNDMORE)
         self.socket.send(data, flags, copy=copy)
-        copy = self.params.get('copy', False)
 
 
 class NdarrayDataReceiver(DataReceiver):
