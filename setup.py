@@ -1,9 +1,8 @@
 # -*- coding: utf-8 -*-
 
 from setuptools import setup, find_packages
-import os
-import pyacq
 
+__version__ = '0.2.0-dev'
 
 long_description = """
 Pyacq is a simple, pure-Python framework for distributed data acquisition and
@@ -16,7 +15,7 @@ scalable acquisition systems.
 
 setup(
     name = "pyacq",
-    version = pyacq.__version__,
+    version = __version__,
     packages = [pkg for pkg in find_packages() if pkg.startswith('pyacq')],
     install_requires=[
                     'numpy',
