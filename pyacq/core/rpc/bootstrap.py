@@ -5,7 +5,7 @@ import time
 import sys
 import json
 import traceback
-import faulthandler
+# import faulthandler
 import logging
 
 # Load configuration options for this process from stdin
@@ -18,7 +18,7 @@ else:
     conf['procname'] = None
 
 # Set up some basic debugging support before importing pyacq
-faulthandler.enable()
+# faulthandler.enable()
 logger = logging.getLogger()
 logger.level = conf['loglevel']
 
