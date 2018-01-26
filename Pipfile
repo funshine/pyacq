@@ -8,13 +8,10 @@ name = "pypi"
 [packages]
 
 pyzmq = "*"
-pytest = "*"
 numpy = "*"
-scipy = "*"
 pyqtgraph = "*"
-msgpack-python = "*"
-pyaudio = "*"
 "pyqt5" = "*"
+msgpack-python = "*"
 
 
 [dev-packages]

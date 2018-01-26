@@ -22,8 +22,9 @@ setup(
                     'numpy',
                     'pyzmq',
                     'pyqtgraph',
-                    #'blosc',  # optional; causes install failure on appveyor
-                    #'msgpack-python',
+                    # 'blosc',  # optional; causes install failure on appveyor
+                    'msgpack-python',
+                    'PyQt5',
                     ],
     author = "S.Garcia",
     author_email = "sam.garcia.die@gmail.com",
